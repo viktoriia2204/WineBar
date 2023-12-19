@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "OpenSans-Light";
+    src: local("OpenSans-Light"),
+    url("./fonts/OpenSans-Light.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "AngleciaProDisplay-Italic";
+    src: local("AngleciaProDisplay-Italic"),
+    url("./fonts/AngleciaProDisplay-Italic.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Arsenal-Regular";
+    src: local("Arsenal-Regular"),
+    url("./fonts/Arsenal-Regular.otf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Arsenal-Italic";
+    src: local("Arsenal-Italic"),
+    url("./fonts/Arsenal-Italic.otf") format("truetype");
+    font-weight: 400;
+}

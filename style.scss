@@ -12,13 +12,13 @@ body {
 }
 
 .container{
-  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   z-index: 10;
   padding: 20px;
   @media (min-width: 1024px) {
     padding: 40px;
+    max-width: 1200px;
   }
 }
 img{
@@ -206,16 +206,16 @@ main {
     }
   }
   img {
-    max-width: 500px;
+    max-width: 300px;
     text-align: center;
     display: block;
     align-items: center;
     margin: 0 auto;
     @media (min-width: 425px) {
+      max-width: 400px;
     }
     @media (min-width: 1024px) {
       max-width: 550px;
-
       max-height: 450px;
     }
   }
@@ -226,6 +226,7 @@ main {
     @media (min-width: 768px) {
       padding: 70px 0 0 25px;
       max-width: 300px;
+
     }
     @media (min-width: 1024px) {
       max-width: 400px;
@@ -278,83 +279,107 @@ main {
     }
   }
   .div1{
-    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
     @media (min-width: 768px) {
-      padding-right: 30px;
+      display: flex;
+      gap: 15px;
+      padding:10px 10px;
     }
     @media (min-width: 1024px) {
+      gap: 50px;
       padding-right: 50px;
     }
 
     img{
-      width: 582px;
-      height: 556px;
-      top: 2610px;
-      left: 82px;
+      max-width:300px;
+      @media (min-width: 425px) {
+        max-width: 400px;
+      }
+      @media (min-width: 1024px) {
+        width: 582px;
+        height: 556px;
+      }
     }
     .sec2-text{
       p{
         font-family: 'Arsenal-Italic' , sans-serif;
         font-size: 24px;
-        font-style: italic;
         font-weight: 400;
         line-height: 50px;
         text-align: center;
-        width: 452px;
-        padding: 15px 0;
+        width: 300px;
+        padding: 10px 51px;
         @media (min-width: 768px) {
           font-size: 18px;
+          width: 400px;
         }
         @media (min-width: 1024px) {
           font-size: 22px;
           padding: 50px 0;
+          width: 452px;
+          font-style: italic;
         }
       }
     }
-
-
   }
   .div2{
-    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
     @media (min-width: 768px) {
       padding-right: 30px;
+      display: flex;
     }
     @media (min-width: 1024px) {
       padding-right: 50px;
     }
 
+
     .img2{
-      max-width: 768px;
-      height: 584px;
-      top: 2627px;
-      left: -786px;
+      max-width: 300px;
+      @media (min-width: 425px) {
+        max-width: 400px;
+      }
+      @media (min-width: 1024px) {
+        max-width: 768px;
+        height: 584px;
+      }
     }
 
     .img3{
-      width: 445.49px;
-      height: 584px;
-      top: 3235px;
-      left: 1014px;
+      max-width: 300px;
+      margin-top: 20px;
+      @media (min-width: 425px) {
+        max-width: 400px;
+      }
+      @media (min-width: 1024px) {
+        width: 445.49px;
+        height: 584px;
+        margin-top: 0;
+      }
     }
   }
   }
 
 
 footer{
-  width: 1100px;
-  margin-left: 92px;
+
+  @media (min-width: 768px) {
+
+  }
+  @media (min-width: 1024px) {
+    width: 1100px;
+    margin-left: 92px;
+  }
+
 
   .flex{
-    display: flex;
-    justify-content: space-between;
     @media (min-width: 768px) {
       padding-right: 30px;
+      display: flex;
+      justify-content: space-between;
     }
     @media (min-width: 1024px) {
       padding-right: 50px;
@@ -365,7 +390,10 @@ footer{
       font-size: 24px;
       font-weight: 700;
       line-height: 50px;
-      text-align: left;
+      text-align: center;
+      @media (min-width: 768px) {
+        text-align: left;
+      }
     }
 
     p{
@@ -373,12 +401,25 @@ footer{
       font-size: 24px;
       font-weight: 400;
       line-height: 50px;
-      text-align: left;
+      text-align: center;
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+
+    }
+    img{
+
+      max-width: 150px;
+      margin: 20px auto 50px;
+      @media (min-width: 768px) {
+        display: block;
+        max-width: 120px;
+        margin: 0 auto;
+      }
+
     }
   }
-  img{
-    max-width: 120px;
-  }
+
   p{
     text-align: center;
     font-family: 'AngleciaProDisplay-Italic' , sans-serif;
@@ -386,5 +427,6 @@ footer{
     font-style: italic;
     font-weight: 400;
     line-height: 16px;
+
   }
 }

@@ -10,7 +10,6 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   z-index: 10;
@@ -19,6 +18,7 @@ body {
 @media (min-width: 1024px) {
   .container {
     padding: 40px;
+    max-width: 1200px;
   }
 }
 
@@ -223,11 +223,16 @@ main {
   }
 }
 .sec1 img {
-  max-width: 500px;
+  max-width: 300px;
   text-align: center;
   display: block;
   align-items: center;
   margin: 0 auto;
+}
+@media (min-width: 425px) {
+  .sec1 img {
+    max-width: 400px;
+  }
 }
 @media (min-width: 1024px) {
   .sec1 img {
@@ -310,50 +315,61 @@ main {
   }
 }
 .sec2 .div1 {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
 }
 @media (min-width: 768px) {
   .sec2 .div1 {
-    padding-right: 30px;
+    display: flex;
+    gap: 15px;
+    padding: 10px 10px;
   }
 }
 @media (min-width: 1024px) {
   .sec2 .div1 {
+    gap: 50px;
     padding-right: 50px;
   }
 }
 .sec2 .div1 img {
-  width: 582px;
-  height: 556px;
-  top: 2610px;
-  left: 82px;
+  max-width: 300px;
+}
+@media (min-width: 425px) {
+  .sec2 .div1 img {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec2 .div1 img {
+    width: 582px;
+    height: 556px;
+  }
 }
 .sec2 .div1 .sec2-text p {
   font-family: "Arsenal-Italic", sans-serif;
   font-size: 24px;
-  font-style: italic;
   font-weight: 400;
   line-height: 50px;
   text-align: center;
-  width: 452px;
-  padding: 15px 0;
+  width: 300px;
+  padding: 10px 51px;
 }
 @media (min-width: 768px) {
   .sec2 .div1 .sec2-text p {
     font-size: 18px;
+    width: 400px;
   }
 }
 @media (min-width: 1024px) {
   .sec2 .div1 .sec2-text p {
     font-size: 22px;
     padding: 50px 0;
+    width: 452px;
+    font-style: italic;
   }
 }
 .sec2 .div2 {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
@@ -361,6 +377,7 @@ main {
 @media (min-width: 768px) {
   .sec2 .div2 {
     padding-right: 30px;
+    display: flex;
   }
 }
 @media (min-width: 1024px) {
@@ -369,29 +386,47 @@ main {
   }
 }
 .sec2 .div2 .img2 {
-  max-width: 768px;
-  height: 584px;
-  top: 2627px;
-  left: -786px;
+  max-width: 300px;
+}
+@media (min-width: 425px) {
+  .sec2 .div2 .img2 {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec2 .div2 .img2 {
+    max-width: 768px;
+    height: 584px;
+  }
 }
 .sec2 .div2 .img3 {
-  width: 445.49px;
-  height: 584px;
-  top: 3235px;
-  left: 1014px;
+  max-width: 300px;
+  margin-top: 20px;
+}
+@media (min-width: 425px) {
+  .sec2 .div2 .img3 {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .sec2 .div2 .img3 {
+    width: 445.49px;
+    height: 584px;
+    margin-top: 0;
+  }
 }
 
-footer {
-  width: 1100px;
-  margin-left: 92px;
-}
-footer .flex {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 1024px) {
+  footer {
+    width: 1100px;
+    margin-left: 92px;
+  }
 }
 @media (min-width: 768px) {
   footer .flex {
     padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1024px) {
@@ -405,17 +440,35 @@ footer .flex h4 {
   font-size: 24px;
   font-weight: 700;
   line-height: 50px;
-  text-align: left;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer .flex h4 {
+    text-align: left;
+  }
 }
 footer .flex p {
   font-family: "Arsenal", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 50px;
-  text-align: left;
+  text-align: center;
 }
-footer img {
-  max-width: 120px;
+@media (min-width: 768px) {
+  footer .flex p {
+    text-align: left;
+  }
+}
+footer .flex img {
+  max-width: 150px;
+  margin: 20px auto 50px;
+}
+@media (min-width: 768px) {
+  footer .flex img {
+    display: block;
+    max-width: 120px;
+    margin: 0 auto;
+  }
 }
 footer p {
   text-align: center;

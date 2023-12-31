@@ -225,7 +225,6 @@ main {
     @media (min-width: 768px) {
       padding: 70px 0 0 25px;
       max-width: 300px;
-
     }
     @media (min-width: 1024px) {
       max-width: 400px;
@@ -295,6 +294,9 @@ main {
       @media (min-width: 425px) {
         max-width: 400px;
       }
+      @media (min-width: 768px) {
+        max-width: 350px;
+      }
       @media (min-width: 1024px) {
         width: 582px;
       }
@@ -306,17 +308,19 @@ main {
         font-weight: 400;
         line-height: 50px;
         text-align: center;
-
         padding: 10px 51px;
         @media (min-width: 768px) {
           font-size: 18px;
-          width: 400px;
+          width: 350px;
+          padding: 10px;
+          line-height: 40px;
         }
         @media (min-width: 1024px) {
           font-size: 22px;
           padding: 50px 0;
           width: 452px;
           font-style: italic;
+          line-height: 50px;
         }
       }
     }
@@ -330,7 +334,7 @@ main {
       display: flex;
     }
     @media (min-width: 1024px) {
-      padding-right: 50px;
+      padding-right: 0;
     }
 
 
@@ -339,9 +343,14 @@ main {
       @media (min-width: 425px) {
         max-width: 400px;
       }
+      @media (min-width: 768px) {
+        max-width: 350px;
+      }
       @media (min-width: 1024px) {
-        max-width: 768px;
-        height: 584px;
+        max-width: 480px;
+      }
+      @media (min-width: 1250px) {
+        max-width: 520px;
       }
     }
 
@@ -351,10 +360,15 @@ main {
       @media (min-width: 425px) {
         max-width: 400px;
       }
-      @media (min-width: 1024px) {
-        width: 445.49px;
-        height: 584px;
+      @media (min-width: 768px) {
+        max-width: 350px;
         margin-top: 0;
+      }
+      @media (min-width: 1024px) {
+        max-width: 480px;
+      }
+      @media (min-width: 1250px) {
+        max-width: 520px;
       }
     }
   }
@@ -362,15 +376,15 @@ main {
 
 
 footer{
+  padding-top: 30px;
 
   @media (min-width: 768px) {
-
+    margin-left: 10px;
   }
   @media (min-width: 1024px) {
-    width: 1100px;
-    margin-left: 92px;
+    margin: 0 auto;
+    padding-left: 20px;
   }
-
 
   .flex{
     @media (min-width: 768px) {
@@ -397,7 +411,7 @@ footer{
       font-family: 'Arsenal' , sans-serif;
       font-size: 18px;
       font-weight: 400;
-      line-height: 50px;
+      line-height: 40px;
       text-align: center;
       @media (min-width: 768px) {
         text-align: left;
@@ -412,7 +426,6 @@ footer{
         max-width: 120px;
         margin: 0 auto;
       }
-
     }
   }
 
@@ -423,6 +436,11 @@ footer{
     font-style: italic;
     font-weight: 400;
     line-height: 16px;
-
+  }
+  .footer-p{
+    padding: 20px;
+    @media (min-width: 768px) {
+      padding-top: 50px;
+    }
   }
 }

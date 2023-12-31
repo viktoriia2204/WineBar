@@ -64,6 +64,11 @@ header{
     text-decoration: none;
   }
 
+  a:hover{
+    transition: all 0.3s linear;
+    color: #9B1C21;
+  }
+
   .flex{
     display: flex;
     align-items: center;
@@ -185,6 +190,10 @@ header{
   background-color: rgb(248, 239, 239);
   color: #310707;
 }
+.burger-wrapper .menu__box input[type="checkbox"]:checked ~ .menu__box {
+  transform: translateX(0);
+}
+
 
 main {
   margin-top: 170px;
@@ -433,6 +442,18 @@ footer{
       }
     }
 
+    a:hover{
+      transition: all 0.3s linear;
+      color: #9B1C21;
+    }
+
+    .phone{
+      text-align: center;
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+    }
+
     img{
       max-width: 150px;
       margin: 20px auto 50px;
@@ -459,3 +480,4 @@ footer{
     }
   }
 }
+
